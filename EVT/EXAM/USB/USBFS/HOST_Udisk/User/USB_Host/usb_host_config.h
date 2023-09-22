@@ -37,6 +37,9 @@ extern "C" {
 #define DEF_USB_PORT_FS             0x00                                        
 #define DEF_USB_PORT_HS             0x01      
 
+#define DEF_USBFS_PORT_EN           1
+#define DEF_USBHS_PORT_EN           0
+
 /* USB Root Device Status */
 #define ROOT_DEV_DISCONNECT         0
 #define ROOT_DEV_CONNECTED          1

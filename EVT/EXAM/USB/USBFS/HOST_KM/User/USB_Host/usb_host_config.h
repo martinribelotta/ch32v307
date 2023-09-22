@@ -51,6 +51,11 @@ extern "C" {
 #define DEF_NEXT_HUB_PORT_NUM_MAX   4
 #define DEF_INTERFACE_NUM_MAX       4
 
+#define DEF_USB_PORT_FS_EN          1
+#define DEF_USB_PORT_HS_EN          0
+#define DEF_USB_PORT_FS             0x00
+#define DEF_USB_PORT_HS             0x01
+
 /* USB Root Device Status */
 #define ROOT_DEV_DISCONNECT         0
 #define ROOT_DEV_CONNECTED          1
@@ -96,7 +101,7 @@ extern "C" {
 #define DEF_RE_ATTACH_TIMEOUT       100         // Wait for the USB device to reconnect after reset, 100mS timeout
 #define DEF_WAIT_USB_TRANSFER_CNT   1000        // Wait for the USB transfer to complete
 #define DEF_CTRL_TRANS_TIMEOVER_CNT 200000/20   // Control transmission delay timing
-
+#define DEF_WAIT_USB_TOUT_200US     DEF_WAIT_USB_TRANSFER_CNT
 
 /*******************************************************************************/
 /* Struct Definition */
